@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    background-color: aliceblue;
+}
+
+.nav > div > h1 {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.navBar {
+    padding: 0%;
+    width: 50%;
+    margin-left: auto;
+    display: flex;
+    list-style: none; 
+    justify-content: flex-end;
+}
+
+.navItem {
+    padding: 10px;
+    margin-right: 15px;
+}
