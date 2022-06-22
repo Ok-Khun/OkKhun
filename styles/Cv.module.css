@@ -1,0 +1,116 @@
+.topSection {
+    display: flex;
+    align-items: center;
+    background-color: #707890;
+    color: white;
+}
+
+.profilePic {
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.basicInfo {
+    margin-left: 25px;
+}
+
+.basicInfo > p {
+    font-size: 20px;
+}
+
+.contactInfo {
+    list-style: none;
+}
+
+.contactInfo > li > span {
+    margin-left: 10px ;
+}
+
+.contactInfo > li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contactInfo > li > i {
+    position: relative;
+    top: 3px;
+}
+
+.contactInfoSection {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.cvContent > h2 {
+   background-color: black;
+   color: white;
+   padding: 5px;
+}
+
+/* work exp */
+.workExp {
+   margin-bottom: 10px;
+   padding: 15px;
+   border-radius: 10px;
+   background-color: #f5f5f5;
+}
+
+.workExp > h3 {
+    margin: 0;
+}
+
+.workExpSpan {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.exp{
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+}
+
+.exp > ul {
+   margin-top: 5px;
+}
+
+/* edu */
+.edu{
+    display: flex;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.eduYear{
+    /* width: 10%; */
+    padding: 15px;
+    margin-right: 5px;
+}
+
+.eduDivider {
+    /* width: 5%; */
+    padding: 15px;
+    margin-right: 5px;
+}
+
+.eduYear > span {
+    display: block;
+    text-align: right;
+}
+
+.eduSchoolMajor{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* certificates */
+.certificates{
+    padding: 15px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+}
