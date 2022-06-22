@@ -26,7 +26,6 @@ const Navbar = () => {
 };
 
 const Nav = (props: any) => {
-  console.log(props);
   return (
     <nav className={styles.nav}>
       <div>
