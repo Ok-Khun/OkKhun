@@ -57,7 +57,7 @@ const Cv = () => {
         </div>
       </div>
       {/* About me */}
-      <div className={styles.cvContent}>
+    <div className={styles.cvContent}>
         <h2>About Me</h2>
         <p
           style={{

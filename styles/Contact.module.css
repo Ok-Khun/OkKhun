@@ -1,0 +1,42 @@
+.contact {
+    background-color: #f5f5f5;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 84vh;
+    padding: 20px;
+}
+
+.contact > h2 {
+    margin: 0%;
+}
+
+.contactForm {
+    margin-top: 15px;
+    border-radius: 5px;
+    border: solid 1px black;
+    padding: 20px;
+    width: 350px;
+}
+
+.contactForm > form > label, 
+.contactForm > form >input, 
+.contactForm > form >textarea {
+    display: block;
+}
+
+.contactForm > form > input,
+.contactForm > form >textarea {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.contactForm > form >textarea {
+    resize: vertical;
+}
+
+.contactForm > form > input:last-child {
+    margin-bottom: 0px;
+}
