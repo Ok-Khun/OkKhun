@@ -1,5 +1,5 @@
 import styles from "../../styles/Cv.module.css";
-
+import Link from "next/link"
 type WorkExpProps = {
     companyName: string;
     duration: string;
@@ -44,7 +44,9 @@ type WorkExpProps = {
           <ul>
           {
             projects.map((item, i) => <li key={i} className={styles.projectLink}>
-              <a href={item.link} target="_blank">{item.project}</a>
+              <Link href={item.link}>
+              <a target="_blank">{item.project}</a>
+              </Link>
             </li>)
           }
           </ul>
