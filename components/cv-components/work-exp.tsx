@@ -44,9 +44,9 @@ type WorkExpProps = {
           <ul>
           {
             projects.map((item, i) => <li key={i} className={styles.projectLink}>
-              <Link href={item.link}>
-              <a target="_blank" rel="noreferrer">{item.project}</a>
-              </Link>
+              {/* <Link href={item.link} target="_blank" rel="noreferrer"> */}
+              <a href={item.link} target="_blank" rel="noreferrer">{item.project}</a>
+              {/* </Link> */}
             </li>)
           }
           </ul>

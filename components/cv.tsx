@@ -48,7 +48,7 @@ const Cv = () => {
               icon={LinkIcon}
               iconAlt="Link:"
               content={
-                <a href="https://t.ly/eC-l" target="_blank">
+                <a href="https://t.ly/eC-l" target="_blank" rel="noreferrer">
                   LinkedIn
                 </a>
               }
