@@ -44,7 +44,9 @@
     align-items: center;
 }
 
-.contactInfo > li > i {
+.contactInfo > li > i,
+.projectLink > a > i
+{
     position: relative;
     top: 3px;
 }
@@ -144,6 +146,10 @@
     padding: 15px;
     background-color: #f5f5f5;
     border-radius: 10px;
+}
+
+.certificates > ul {
+    margin: 0px;
 }
 
 @media screen and (max-width: 650px) {
