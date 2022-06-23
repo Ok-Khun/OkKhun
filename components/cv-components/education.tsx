@@ -21,7 +21,11 @@ type EducationProps = {
         </div>
         <div className={styles.eduSchoolMajor}>
           <span>{degree}</span>
-          <span>{schoolName}</span>
+          <span style={
+            {
+              fontWeight: "bold"
+            }
+          }>{schoolName}</span>
         </div>
       </div>
     );

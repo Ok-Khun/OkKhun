@@ -1,9 +1,9 @@
-import styles from "../styles/footer.module.css";
+import styles from "../styles/Footer.module.css"
 
 const Footer = () => {
     return (
-        <footer className={styles.footer}>
-            <p>Footer here!</p>
+        <footer className={styles.myFooter}>
+            <p className={styles.copyRight}>© KHUN OKKAR 2022</p>
         </footer>
     )
 }

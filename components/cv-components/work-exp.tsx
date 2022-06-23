@@ -11,7 +11,10 @@ type WorkExpProps = {
     position: string;
     duration: string;
     description: string | string[];
-    projects: string[]
+    projects: {
+      project: string,
+      link: string
+    }[]
   };
   
   const WorkExpComponent = ({
@@ -40,7 +43,9 @@ type WorkExpProps = {
           <span className={styles.workExpSpan}>Completed Projects:</span>
           <ul>
           {
-            projects.map((item, i) => <li key={i}>{item}</li>)
+            projects.map((item, i) => <li key={i} className={styles.projectLink}>
+              <a href={item.link} target="_blank">{item.project}</a>
+            </li>)
           }
           </ul>
           </>  

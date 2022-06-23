@@ -5,12 +5,16 @@ import Footer from '../components/footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
 return (
-  <div>
+  <div style={
+    {
+      backgroundColor: "#333399"
+    }
+  }>
     <Nav />
     <div className="main">
     <Component {...pageProps} />
     </div>
-    {/* <Footer /> */}
+    <Footer />
   </div>
 )
 }
