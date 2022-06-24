@@ -10,6 +10,7 @@ import PhIcon from "../public/assets/icons/phone.svg";
 import EmailIcon from "../public/assets/icons/email.svg";
 import LinkIcon from "../public/assets/icons/link.svg";
 import ProfilePic from "../public/assets/Ok-Khun.png";
+import Github from "../public/assets/icons/github.svg";
 
 const Cv = () => {
   return (
@@ -53,12 +54,21 @@ const Cv = () => {
                 </a>
               }
             />
+            <ContactInfoItem
+              icon={Github}
+              iconAlt="Link:"
+              content={
+                <a href="https://github.com/ok-Khun/" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              }
+            />
           </ul>
         </div>
       </div>
       {/* About me */}
-    <div className={styles.cvContent}>
-        <h2>About Me</h2>
+      <div className={styles.cvContent}>
+        <h2>About</h2>
         <p
           style={{
             paddingLeft: "15px",
@@ -72,7 +82,7 @@ const Cv = () => {
           structures, pipe jacking, land reclamation, architectural works, and
           residential houses. I am confident in my ability to deliver projects
           on time and to a high standard, and I am looking for an opportunity to
-          use my skills and experience to contribute.
+          use my skills and experience to contribute and solve challenging problems.
         </p>
       </div>
       {/* Work Exp */}
@@ -88,8 +98,8 @@ const Cv = () => {
               duration: "Aug 2016 - October 2020",
               description: [
                 "Prepare, review and submit method of statements, risk assessments, and safe work procedures to clients and authorities.",
-                "Liaison with clients, consultants, suppliers, contractors, and authorities.",
-                "Submission of monthly reports, progress claims, and vos to clients.",
+                "Liaise with clients, consultants, suppliers, contractors, and authorities.",
+                "Submit of monthly reports, progress claims, and vos to clients.",
                 "Ensure that projects are completed on time.",
                 "Ensure safety and provide necessary training to the workforce during the execution of the projects.",
                 "Project management, coordination, and supervision.",
@@ -117,10 +127,10 @@ const Cv = () => {
               duration: "May 2013 - Aug 2016",
               description: [
                 "Assist managers in project planning and updating master programme using Microsoft project.",
-                "Preparation of monthly reports, daily reports, and recording of site activities.",
+                "Prepare monthly reports, daily reports, and recording of site activities.",
                 "Submission of shop drawings to clients and consultants.",
                 "Supervise construction activities and carry out site inspections.",
-                "Liaison with clients, consultants, and authorities.",
+                "Liaise with clients, consultants, and authorities.",
               ],
               projects: [
                 {
@@ -145,12 +155,12 @@ const Cv = () => {
               duration: "January 2013 - April 2013",
               description: [
                 "Carry out site inspections and supervision of construction activities.",
-                "Liaison with consultants.",
+                "Liaise with consultants.",
                 "Progress reporting to site managers and project managers.",
               ],
               projects: [
                 {
-                  project: "Project: D'leedon condominium",
+                  project: "D'leedon condominium",
                   link: "https://dleedon.com/",
                 },
               ],

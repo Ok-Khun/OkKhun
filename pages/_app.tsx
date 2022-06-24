@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 return (
   <div style={
     {
-      backgroundColor: "#333399"
+      backgroundColor: "#FFF"
     }
   }>
     <Nav />

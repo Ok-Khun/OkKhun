@@ -152,7 +152,7 @@
     margin: 0px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 780px) {
     .topSection {
         flex-direction: column;
         justify-content: center;

@@ -1,20 +1,46 @@
 import styles from "../styles/Contact.module.css"
 
-const Contact = () => {
+import React, { useState } from "react"
 
-    const handleSubmit = () => {
-        alert("This hasn't worked yet!")
+type MessageType = {
+    email: string;
+    message: string;
+}
+
+const Contact = () => {
+    const [item, setItem] = useState<MessageType>({
+        email: "",
+        message: ""
+    })
+
+    const handleChange = (e:React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        e.preventDefault()
+        const {name, value} = e.target;
+        setItem((prevState) => {
+            return {
+                ...prevState,
+                [name]: value
+            }
+        })
+    }
+
+    const handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        const data = await fetch("/api/hello")
+        const result = await data.json()
+        console.log(result)
     }
 
     return (
         <div className={styles.contact}>
-            <h2>Contact</h2>
+            <h2>Drop a message!</h2>
             <div className={styles.contactForm}>
                 <form onSubmit={handleSubmit}>
                     <label>Email Address</label>
-                    <input type="email" name="email" required/>
+                    <input type="email" name="email" onChange={handleChange} required/>
                     <label>Message</label>
-                    <textarea name="message" required></textarea>
+                    <textarea name="message" onChange={handleChange} 
+                    required></textarea>
                     <input type="submit" value="Submit"/>
                 </form>
             </div>
