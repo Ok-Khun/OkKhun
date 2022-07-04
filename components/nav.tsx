@@ -20,7 +20,8 @@ const Navbar = () => {
   return (
     <ul className={styles.navBar}>
       {/* <NavItem text="Dowload CV" path="/download" /> */}
-      <NavItem text="Contact" path="/contact" />
+      <NavItem text="Download" path="/download" />
+      <NavItem text="Contact" path="/download" />
     </ul>
   );
 };

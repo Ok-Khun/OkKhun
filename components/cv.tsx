@@ -11,6 +11,7 @@ import EmailIcon from "../public/assets/icons/email.svg";
 import LinkIcon from "../public/assets/icons/link.svg";
 import ProfilePic from "../public/assets/Ok-Khun.png";
 import Github from "../public/assets/icons/github.svg";
+import LocationTag from "../public/assets/icons/location.svg"
 
 const Cv = () => {
   return (
@@ -31,6 +32,19 @@ const Cv = () => {
         <div className={styles.basicInfo}>
           <h1>Khun Okkar</h1>
           <p>Engineer (Civil/Construction)</p>
+          <p> <i style={{
+            position: "relative",
+            top: "3px",
+            left: "-5px",
+            color: "white"
+          }}>
+          <Image
+            src={LocationTag}
+            width="20"
+            height="20"
+            alt={"location icon"}
+          />
+        </i>Singapore</p>
         </div>
         {/* Contact Info */}
         <div className={styles.contactInfoSection}>
@@ -38,7 +52,7 @@ const Cv = () => {
             <ContactInfoItem
               icon={PhIcon}
               iconAlt="Phone:"
-              content="+95 9 964181564"
+              content="+65 87505124"
             />
             <ContactInfoItem
               icon={EmailIcon}
@@ -173,7 +187,7 @@ const Cv = () => {
         <h2>Education</h2>
         <Education
           yearOfGraduation={2016}
-          degree="Bachelor of Science Construction Project Management"
+          degree="Bachelor of Science in Construction Project Management"
           schoolName="Heriot-Watt University"
         />
         <Education
@@ -184,7 +198,7 @@ const Cv = () => {
       </div>
       {/* CERTIFICATIONS */}
       <div className={styles.cvContent}>
-        <h2>Certificaitons</h2>
+        <h2>Certifications</h2>
         <div className={styles.certificates}>
           <ul>
             <li>BCSS (Building Construction Supervisor Safety Certificate)</li>
