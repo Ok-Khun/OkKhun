@@ -19,9 +19,7 @@ const NavItem = ({ text, path }: NavItemInterface) => {
 const Navbar = () => {
   return (
     <ul className={styles.navBar}>
-      {/* <NavItem text="Dowload CV" path="/download" /> */}
-      <NavItem text="Download" path="/download" />
-      <NavItem text="Contact" path="/download" />
+      <NavItem text="Contact" path="/contact" />
     </ul>
   );
 };

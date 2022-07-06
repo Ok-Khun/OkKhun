@@ -1,48 +1,39 @@
 import styles from "../styles/Contact.module.css"
-
-import React, { useState } from "react"
-
-type MessageType = {
-    email: string;
-    message: string;
-}
+import React, { FormEvent, useRef } from "react"
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    const [item, setItem] = useState<MessageType>({
-        email: "",
-        message: ""
-    })
-
-    const handleChange = (e:React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
-        e.preventDefault()
-        const {name, value} = e.target;
-        setItem((prevState) => {
-            return {
-                ...prevState,
-                [name]: value
-            }
-        })
-    }
-
-    const handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        const data = await fetch("/api/hello")
-        const result = await data.json()
-        console.log(result)
-    }
+    const form:React.MutableRefObject<any> = useRef(null)
+    const sendEmail = (e:FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        emailjs.sendForm(process.env.SERVICE_NUMBER as string, process.env.TEMPLATE_NUMBER as string, form.current, 'tABnolPbV2ENmW-MN')
+          .then((result) => {
+              if(result.text) {
+                // clear form inputs
+                form.current.reset()
+                alert("message received!")
+              }
+          }, (error) => {
+              if(error) {
+                alert("Something went wrong, Please try again later!")
+              }
+          });
+      };
 
     return (
         <div className={styles.contact}>
             <h2>Drop a message!</h2>
             <div className={styles.contactForm}>
-                <form onSubmit={handleSubmit}>
-                    <label>Email Address</label>
-                    <input type="email" name="email" onChange={handleChange} required/>
+                <form ref={form} onSubmit={sendEmail}>
+                    <label>Name</label>
+                    <input type="text" name="user_name" />
+                    <label>Email</label>
+                    <input type="email" name="user_email" />
                     <label>Message</label>
-                    <textarea name="message" onChange={handleChange} 
-                    required></textarea>
-                    <input type="submit" value="Submit"/>
+                    <textarea name="message" />
+                    <input type="submit" value="Send" />
                 </form>
+
             </div>
         </div>
     )
