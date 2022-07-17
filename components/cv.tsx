@@ -111,9 +111,9 @@ const Cv = () => {
               position: "Site Engineer",
               duration: "Aug 2016 - October 2020",
               description: [
-                "Prepare, review and submit method of statements, risk assessments, and safe work procedures to clients and authorities.",
+                "Prepare, review and submit method of statements, risk assessments, safe work procedures and shop drawings to clients and authorities.",
                 "Liaise with clients, consultants, suppliers, contractors, and authorities.",
-                "Submit of monthly reports, progress claims, and vos to clients.",
+                "Submit monthly reports, progress claims, and vos to clients.",
                 "Ensure that projects are completed on time.",
                 "Ensure safety and provide necessary training to the workforce during the execution of the projects.",
                 "Project management, coordination, and supervision.",
@@ -123,8 +123,13 @@ const Cv = () => {
               projects: [
                 {
                   project:
-                    "Contract T202: Woodlands North Station And Tunnels For  Thomson-East Coast Line",
+                    "Contract T202: Woodlands North Station And Tunnels For  Thomson East Coast Line",
                   link: "https://landtransportguru.net/woodlands-north-station/",
+                },
+                {
+                  project:
+                    "Micron Fab 10A",
+                  link: "https://www.ktcgroup.com.sg/micron-fab-10a-project/",
                 },
                 {
                   project: "The Woodleigh Residences",
@@ -168,7 +173,7 @@ const Cv = () => {
               position: "Junior Engineer",
               duration: "January 2013 - April 2013",
               description: [
-                "Carry out site inspections and supervision of construction activities.",
+                "Carry out site inspections and supervise construction activities.",
                 "Liaise with consultants.",
                 "Progress reporting to site managers and project managers.",
               ],
